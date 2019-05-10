@@ -1,0 +1,5 @@
+To improve but left off for time's sake:
+
+- add animation to menu toggle
+
+- services link drop down should hide when clicked outside of menu (not just when re-clicking services link)

@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+
+.Nav {
+    position: relative;
+    font-family: Roboto, sans-serif;
+    background: red;
+    padding: 30px 25px;
+    &__links {
+        display: inline-flex;
+        @media (max-width: 1000px) {
+            
+                display: block;
+            
+        }
+    }
+    &__loginLinks {
+        position: absolute;
+        padding: 15px 12px;
+        top: 10px;
+        right: 5px;
+        display: inline-block;
+    }
+    img {
+        width: 200px;
+    }
+    a {
+        font-size: 1rem;
+        margin: 0 12px;
+        font-weight: 300;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        &:hover {
+            color: #000; 
+            text-decoration: underline;  
+        }
+    }
+    &__dropdown{   
+            position: relative;
+            display: inline-block;
+    }
+    &__dropdownContent {
+        display: none;
+        transform: translateX(5px);
+        position: absolute;
+        background-color: #f1f1f1;
+        border-radius: 3px;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1; 
+        & a {
+            text-align: center;
+            color: black;
+            padding: 8px 10px;
+            margin: 5px 0;
+            text-decoration: none;
+            display: block;
+            &:hover {
+                color: red;
+                text-decoration: none;
+            }
+        }
+        &__show {
+            display:block;
+            color: blue;
+        }
+        
+    }
+    @media (max-width: 830px) {
+        & {
+            display: none;
+        }
+        &__dropdownContent {
+            position: relative;
+        }
+    }
+    button {
+        margin: 0 12px;
+    }
+    &__valuationButton {
+        position: absolute;
+        padding: 15px 12px;
+        bottom: 10px;
+        right: 35px;
+        display: inline-block;
+        background: blue;
+        color: white;
+        cursor: pointer;
+        &:hover, :focus {
+            background-color: #2980B9;
+          }
+    }
+
+}
+   
